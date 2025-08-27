@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+
+        <label>Pesquisa de satisfação</label><br><br>
+
+
+        <label>Nota
+            <select name="nota" id="nota" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </label><br><br>
+
+        <label for="anotacoes">Mensagem</label>
+        <textarea id="anotacoes" name="anotacoes" rows="5" cols="30" required
+        placeholder="Digite sua mensagem: ">Anotações...</textarea><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+
+    </form>
+</body>
+</html>
