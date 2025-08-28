@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="post">
+
+        <label>Formulário de Doação</label><br><br>
+
+        <label for="valor">Valor:</label>
+        <input type="number" name="valor" id="valor" required/><br><br>
+
+        <label>Formas de pagamento
+            <select name="pagamento" id="pagamento" required>
+                <option value="c">Cartão</option>
+                <option value="d">Dinheiro</option>
+            </select>
+        </label><br><br>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Cancelar</button>
+
+    </form>
+
+</body>
+</html>
