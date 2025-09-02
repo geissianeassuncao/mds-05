@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <form method="post">
+        <label>Formulário de Cadastro de Usuário</label><br /><br />
+
+      <div class="row">
+        <div class="col">
+        <label for="nome" class="form-label">Nome completo:</label><br />
+        <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Digite seu nome completo"
+          value=""
+          required
+          class="form-control"
+        /></div>
+
+      <div class="col">
+        <label for="emal" class="form-label">E-mail:</label><br>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="exemplo@gmail.com"
+          value=""
+          required
+          class="form-control"
+        />
+      </div>
+      </div>
+
+     <div class="row">
+         <div class="col">
+        <label for="senha" class="form-label">Senha:</label><br />
+        <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Crie sua senha"
+          value=""
+          required
+          class="form-control"
+        />
+      </div>
+
+      <div class="col">
+        <label for="confsenha" class="form-label">Confirmação de senha:</label
+        ><br />
+        <input
+          type="password"
+          name="confsenha"
+          id="confsenha"
+          placeholder="Crie sua senha"
+          value=""
+          required
+          class="form-control"
+        />
+      </div>
+
+     </div>
+
+      <div class="row">
+        <div class="col-6">
+        <label for="nascimento" class="form-label">Nascimento: </label><br>
+        <input
+          type="date"
+          name="Nascimento"
+          id="Nascimento"
+          placeholder="Digite sua data de nascimento"
+          value=""
+          required
+          class="form-control"
+        />
+      </div>
+      </div>
+
+      <div class="row">
+        <div>
+        <label for="endereco" class="form-label">Endereço </label>
+        <textarea
+          id="endereco"
+          name="endereco"
+          rows="5"
+          cols="30"
+          placeholder="Endereço"
+          class="form-control"
+        >Endereço</textarea
+        ><br />
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+            <button type="submit">Enviar</button>
+        </div>
+
+        <div class="col">
+            <button type="reset">Cancelar</button>
+        </div>
+      </div>
+
+      </div>
+    </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
