@@ -1,0 +1,34 @@
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+        <label for="nome">Nome:</label>
+        <input class="form-control" [(ngModel)] = pessoa.nome type="text" name="nome" id="nome">
+    </div>
+    <div class="col">
+        <label for="sobrenome">Sobrenome:</label>
+        <input class="form-control" [(ngModel)] = pessoa.sobrenome type="text" name="sobrenome" id="sobrenome">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <label for="endereco">Endereço:</label>
+        <textarea class="form-control" [ngModel] = pessoa.endereco type="text" name="endereco" id="endereco"></textarea>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <label for="telefone">Telefone:</label>
+        <input class="form-control" [ngModel] = pessoa.telefone type="text" name="telefone" id="telefone">
+    </div>
+</div>
+
+{{pessoa.nome}} 
+{{pessoa.sobrenome}}
+{{pessoa.endereco}}
+{{pessoa.telefone}}
+
+
+</div>
