@@ -14,14 +14,34 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [ButtonComponent, FormsFildComponent, RouterModule, MatSidenavModule, MatFormFieldModule, MatSelectModule, MatButtonModule, MatToolbarModule, MatButtonModule, MatIconModule ],
+  imports: [RouterModule, MatSidenavModule, MatFormFieldModule, MatSelectModule, MatButtonModule,
+           MatToolbarModule, MatIconModule, MatDividerModule,MatListModule,
+           FormsModule, MatFormFieldModule, MatInputModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   standalone: true,
 })
 export class AppComponent {
   title = 'hello-world';
+
+  listaDeTarefas: Array<string> = [
+    'Tarefa 1',
+    'Tarefa 2',
+  ];
+
+  tarefa: string ='';
+
+  public addTarefa(): void {
+    this.listaDeTarefas.push(this.tarefa);
+    this.tarefa = '';
+  }
+
+
 }
